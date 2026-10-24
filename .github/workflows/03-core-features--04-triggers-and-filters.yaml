@@ -32,6 +32,9 @@ jobs:
   echo-event:
     runs-on: ubuntu-24.04
     steps:
+      - name: Print the Event Name
+        run: echo "The current event is $GITHUB_EVENT_NAME"
+
       - name: Dump full event JSON
         run: |
           echo "=== $GITHUB_EVENT_NAME payload === heldsjdsajk"
